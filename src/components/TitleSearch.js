@@ -19,14 +19,7 @@ function TitleSearch({handleChange})  {
   
     return (
       <form onSubmit={handleSubmit}>
-        <input
-          onChange={changeSearchTerm}
-          type="text"
-          name="searchTerm"
-          placeholder="Filter keywords"
-          autoFocus
-          required
-          value={searchTerm} />
+        <input onChange={changeSearchTerm} type="text" name="searchTerm" placeholder="Filter keywords" autoFocus autoComplete='off' required value={searchTerm} />
       </form>
     );
   }
